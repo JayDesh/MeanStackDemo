@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="//code.angularjs.org/1.5.8/angular-resource.min.js"></script>>
+
+    </script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+   </head>
+  <body ng-app="MeanDemo">
+    <div class="" ng-controller="MeanController">
+       <ul>
+         <li ng-repeat="product in products" >{{product.name}}</li>
+       </ul>
+       <label for="productName">New Product Name</label>
+       <input type="textbox" name="productName" value="" ng-model="prodName">
+       <button ng-click="createProduct()">Submit</button>
+    </div>
+  </body>
+</html>
